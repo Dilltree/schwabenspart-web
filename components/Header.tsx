@@ -57,14 +57,7 @@ export default function Header() {
               </svg>
             </Link>
             <LanguageToggle />
-            <a
-              href="https://play.google.com/store"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-accent hover:bg-accent-light text-primary text-sm font-bold px-4 py-2 rounded-full transition-colors"
-            >
-              {t("nav.app-laden")}
-            </a>
+            {/* App-Button ausgeblendet bis Store-Release */}
           </nav>
 
           {/* Mobile Menu Button */}

@@ -12,9 +12,6 @@ export function HeroSection() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-24">
         <div className="flex flex-col sm:flex-row items-center gap-8 sm:gap-12">
           <div className="flex-1 text-center sm:text-left">
-            <span className="inline-block mb-4 px-3 py-1 text-xs font-semibold rounded-full bg-accent/20 text-accent animate-pulse">
-              {t("hero.badge")}
-            </span>
             <h1 className="text-3xl sm:text-5xl font-bold leading-tight">
               {t("hero.title")}{" "}
               <span className="text-accent">{t("hero.schwabe")}</span>
@@ -103,34 +100,7 @@ export function TipsHeader() {
   );
 }
 
+// AppCTA — ausgeblendet bis die App im Store ist
 export function AppCTA() {
-  const { t } = useTranslations();
-
-  return (
-    <section className="max-w-6xl mx-auto px-4 sm:px-6 py-16">
-      <div className="bg-primary rounded-3xl p-8 sm:p-12 flex flex-col sm:flex-row items-center gap-8">
-        <Image
-          src="/logos/logo.png"
-          alt="Der Schwabe App"
-          width={100}
-          height={100}
-          className="rounded-2xl shadow-lg shrink-0"
-        />
-        <div className="text-center sm:text-left">
-          <h2 className="text-2xl font-bold text-white">{t("app.title")}</h2>
-          <p className="text-white/70 mt-2">
-            {t("app.subtitle")}
-          </p>
-        </div>
-        <a
-          href="https://play.google.com/store"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-accent hover:bg-accent-light text-primary font-bold px-8 py-3 rounded-full transition-colors shrink-0 whitespace-nowrap"
-        >
-          {t("app.cta")}
-        </a>
-      </div>
-    </section>
-  );
+  return null;
 }
