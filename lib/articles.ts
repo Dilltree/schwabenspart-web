@@ -9,7 +9,7 @@ export const NACHRICHTEN: Artikel[] = [
     description:
       "Die Finanzminister aus fünf EU-Ländern fordern eine Steuer auf Krisenprofite von Energiekonzernen. Was das für Verbraucher bedeutet.",
     kategorie: "Wirtschaft",
-    datum: "4. April 2026",
+    datum: "2026-04-04T08:00",
     title_en: "Fuel Prices Exploding: Is the Windfall Tax Coming?",
     description_en: "Finance ministers from five EU countries are calling for a tax on crisis profits of energy companies.",
     kategorie_en: "Economy",
@@ -44,7 +44,7 @@ Die EU-Kommission wird den Vorschlag zur Übergewinnsteuer voraussichtlich im Ma
     description:
       "Die Europäische Zentralbank lässt den Leitzins unverändert. Wie sich das auf Tagesgeld, Kredite und Baufinanzierung auswirkt.",
     kategorie: "Zinsen",
-    datum: "3. April 2026",
+    datum: "2026-04-03T14:00",
     title_en: "ECB Keeps Interest Rate Stable — What Savers Need to Know",
     description_en: "The European Central Bank maintains the interest rate unchanged.",
     kategorie_en: "Interest",
@@ -77,7 +77,7 @@ Die nächste EZB-Sitzung ist am 5. Juni 2026. Analysten rechnen frühestens im H
     description:
       "Geopolitische Spannungen und Energiepreise sorgen für Unsicherheit am Aktienmarkt. Was Anleger jetzt beachten sollten.",
     kategorie: "Börse",
-    datum: "3. April 2026",
+    datum: "2026-04-03T10:00",
     title_en: "DAX Under Pressure: Why the Stock Market Is So Nervous",
     description_en: "Geopolitical tensions and energy prices are causing uncertainty.",
     kategorie_en: "Stock Market",
@@ -116,7 +116,7 @@ Die nächste EZB-Sitzung ist am 5. Juni 2026. Analysten rechnen frühestens im H
     description:
       "Vizekanzler Klingbeil will mit einer neuen Bundesfirma den Wohnungsbau ankurbeln. Was das für Mieter und Immobilienkäufer bedeutet.",
     kategorie: "Immobilien",
-    datum: "2. April 2026",
+    datum: "2026-04-02T12:00",
     title_en: "Klingbeil Plans State Housing Construction Company",
     description_en: "Vice Chancellor Klingbeil aims to boost housing construction with a new federal company.",
     kategorie_en: "Real Estate",
@@ -155,7 +155,7 @@ Die Immobilienpreise sind seit 2022 bereits um 10-15% gefallen. Ob es jetzt der 
     description:
       "Die Kryptowährung zeigt sich stabil über der 58.000€-Marke. Eine nüchterne Einordnung für vorsichtige Anleger.",
     kategorie: "Krypto",
-    datum: "2. April 2026",
+    datum: "2026-04-02T09:00",
     title_en: "Bitcoin Surpasses €58,000 — Is It Still Worth Getting In?",
     description_en: "The cryptocurrency remains stable above the €58,000 mark.",
     kategorie_en: "Crypto",
@@ -198,7 +198,7 @@ Die ehrliche Antwort: **Niemand weiß es.** Bitcoin könnte in einem Jahr bei 10
     description:
       "Der Goldpreis steigt auf neue Höchststände. Geopolitische Unsicherheit und Inflationsangst treiben den Kurs.",
     kategorie: "Rohstoffe",
-    datum: "1. April 2026",
+    datum: "2026-04-01T11:00",
     title_en: "Gold at Record High: Why the Safe Haven Shines",
     description_en: "Gold prices are rising to new heights.",
     kategorie_en: "Commodities",
@@ -238,7 +238,7 @@ Gold eignet sich als **Beimischung**, nicht als Hauptinvestment:
     description:
       "Bei Spritpreisen über 2€ denken viele über ein E-Auto nach. Der Schwabe rechnet vor, ob sich ein gebrauchter Stromer wirklich lohnt.",
     kategorie: "Spartipps",
-    datum: "4. April 2026",
+    datum: "2026-04-04T12:00",
     title_en: "Buying a Used Electric Car: Is the Switch Worth It?",
     description_en: "With fuel prices over €2, many are considering an electric car.",
     kategorie_en: "Savings Tips",
@@ -289,7 +289,7 @@ Für Pendler mit täglichen Strecken unter 100 km ist ein gebrauchtes E-Auto fas
     description:
       "Diesel und Benzin auf Rekordhoch. Mit diesen 5 Tricks sparst du sofort beim Tanken und Pendeln.",
     kategorie: "Spartipps",
-    datum: "4. April 2026",
+    datum: "2026-04-04T10:00",
     title_en: "5 Tips for Saving on High Fuel Prices — Immediately Applicable",
     description_en: "Diesel and gasoline at record highs. 5 tricks for instant savings.",
     kategorie_en: "Savings Tips",
@@ -350,7 +350,7 @@ Apps wie **clever-tanken** oder die **ADAC Spritpreise App** zeigen dir die gün
     description:
       "Börse nervös, Inflation hoch, Zinsen stabil. Welche Anlagestrategien jetzt sinnvoll sind — nüchtern betrachtet.",
     kategorie: "Wissen",
-    datum: "4. April 2026",
+    datum: "2026-04-04T06:00",
     title_en: "Investing in Uncertain Times: What Counts Now",
     description_en: "Nervous stock market, high inflation. Which strategies are sensible now?",
     kategorie_en: "Knowledge",
@@ -410,7 +410,7 @@ export const SPARTIPPS: Artikel[] = [
     description:
       "Die einfachste Budgetregel der Welt — und warum der Schwabe sie auf 60-20-20 anpassen würde.",
     kategorie: "Spartipps",
-    datum: "2. April 2026",
+    datum: "2026-04-02T14:00",
     title_en: "The 50-30-20 Rule: Budgeting Like a Schwabe",
     description_en: "The simplest budgeting rule in the world.",
     kategorie_en: "Savings Tips",
@@ -424,7 +424,7 @@ export const SPARTIPPS: Artikel[] = [
     description:
       "Die meisten zahlen zu viel für Energie. Der Schwabe zeigt, wie man in 10 Minuten hunderte Euro spart.",
     kategorie: "Spartipps",
-    datum: "31. März 2026",
+    datum: "2026-03-31T09:00",
     title_en: "Switching Electricity & Gas: Save Up to €800 in 2026",
     description_en: "Most people are paying too much for energy.",
     kategorie_en: "Savings Tips",
@@ -438,7 +438,7 @@ export const SPARTIPPS: Artikel[] = [
     description:
       "ETFs sind der einfachste Weg zum Vermögensaufbau. Hier erfährst du, wie du noch heute anfängst — schwäbisch sparsam.",
     kategorie: "Sparen",
-    datum: "3. April 2026",
+    datum: "2026-04-03T08:00",
     title_en: "ETF Savings Plan for Beginners: How to Start with €25",
     description_en: "ETFs are the easiest way to build wealth.",
     kategorie_en: "Saving",
@@ -452,7 +452,7 @@ export const SPARTIPPS: Artikel[] = [
     description:
       "Geld zurück beim Einkaufen klingt zu gut? Der Schwabe hat 5 Apps getestet und rechnet vor.",
     kategorie: "Deals",
-    datum: "1. April 2026",
+    datum: "2026-04-01T15:00",
     title_en: "Cashback Apps Tested: Which Ones Are Really Worth It?",
     description_en: "Get money back while shopping — tested 5 apps.",
     kategorie_en: "Deals",
@@ -466,7 +466,7 @@ export const SPARTIPPS: Artikel[] = [
     description:
       "Welches Girokonto lohnt sich wirklich? Der Schwabe hat verglichen — und sagt dir, wo du keinen Cent verschwendest.",
     kategorie: "Vergleich",
-    datum: "4. April 2026",
+    datum: "2026-04-04T14:00",
     title_en: "The Best Checking Accounts of 2026 Compared",
     description_en: "Which checking account is really worth it?",
     kategorie_en: "Comparison",
@@ -480,7 +480,7 @@ export const SPARTIPPS: Artikel[] = [
     description:
       "Dein Geld auf dem Girokonto arbeitet nicht für dich. Hier die besten Tagesgeld-Angebote im Überblick.",
     kategorie: "Vergleich",
-    datum: "30. März 2026",
+    datum: "2026-03-30T10:00",
     title_en: "Savings Account Comparison: Where Are the Best Interest Rates?",
     description_en: "An overview of the best savings account offers.",
     kategorie_en: "Comparison",
@@ -530,17 +530,24 @@ const ALLE_ARTIKEL = [...NACHRICHTEN, ...AUTO_ARTIKEL, ...SPARTIPPS];
 const UNIQUE_MAP = new Map(ALLE_ARTIKEL.map((a) => [a.slug, a]));
 const UNIQUE_ARTIKEL = Array.from(UNIQUE_MAP.values());
 
-const MONATE: Record<string, number> = {
-  "Januar": 0, "Februar": 1, "März": 2, "April": 3, "Mai": 4, "Juni": 5,
-  "Juli": 6, "August": 7, "September": 8, "Oktober": 9, "November": 10, "Dezember": 11,
-};
-
 function parseDatum(d: string): number {
-  // "4. April 2026" → timestamp
+  // ISO "2026-04-04T10:00" or legacy "4. April 2026"
+  const iso = Date.parse(d);
+  if (!isNaN(iso)) return iso;
+  const MONATE: Record<string, number> = {
+    "Januar": 0, "Februar": 1, "März": 2, "April": 3, "Mai": 4, "Juni": 5,
+    "Juli": 6, "August": 7, "September": 8, "Oktober": 9, "November": 10, "Dezember": 11,
+  };
   const match = d.match(/(\d+)\.\s*(\w+)\s*(\d{4})/);
   if (!match) return 0;
   const [, tag, monat, jahr] = match;
   return new Date(parseInt(jahr), MONATE[monat] ?? 0, parseInt(tag)).getTime();
+}
+
+export function formatDatum(d: string): string {
+  const ts = parseDatum(d);
+  if (!ts) return d;
+  return new Intl.DateTimeFormat("de-DE", { day: "numeric", month: "long", year: "numeric" }).format(new Date(ts));
 }
 
 function sortByDatum(articles: Artikel[]): Artikel[] {
@@ -552,11 +559,11 @@ export function getNachrichten(): Artikel[] {
 }
 
 export function getSpartipps(): Artikel[] {
-  return SPARTIPPS;
+  return sortByDatum(SPARTIPPS);
 }
 
 export function getArtikel(): Artikel[] {
-  return UNIQUE_ARTIKEL;
+  return sortByDatum(UNIQUE_ARTIKEL);
 }
 
 export function getArtikelBySlug(slug: string): Artikel | undefined {

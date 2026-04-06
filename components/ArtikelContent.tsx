@@ -14,8 +14,13 @@ function renderContent(content: string) {
     const line = lines[i];
     if (line.trim() === "") { i++; continue; }
 
+    if (line.startsWith("### ")) {
+      elements.push(<p key={i} className="text-base font-bold text-foreground mt-6 mb-2">{line.slice(4)}</p>);
+      i++; continue;
+    }
+
     if (line.startsWith("## ")) {
-      elements.push(<h2 key={i} className="text-xl font-bold text-foreground mt-8 mb-4">{line.slice(3)}</h2>);
+      elements.push(<p key={i} className="text-lg font-bold text-foreground mt-8 mb-3">{line.slice(3)}</p>);
       i++; continue;
     }
 
@@ -96,7 +101,7 @@ export default function ArtikelContent({ artikel }: { artikel: Artikel }) {
         <h1 className="text-3xl sm:text-4xl font-bold text-foreground leading-tight">
           {loc.title}
         </h1>
-        <p className="text-muted mt-3">{artikel.datum}</p>
+        <p className="text-muted mt-3">{(() => { const ts = Date.parse(artikel.datum); return isNaN(ts) ? artikel.datum : new Intl.DateTimeFormat("de-DE", { day: "numeric", month: "long", year: "numeric" }).format(new Date(ts)); })()}</p>
       </header>
 
       <div className="text-lg text-muted leading-relaxed font-medium mb-6">

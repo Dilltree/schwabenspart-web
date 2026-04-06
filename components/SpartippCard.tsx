@@ -4,6 +4,12 @@ import Link from "next/link";
 import Image from "next/image";
 import { useTranslations } from "@/lib/i18n";
 
+function formatDatumAnzeige(d: string): string {
+  const ts = Date.parse(d);
+  if (isNaN(ts)) return d;
+  return new Intl.DateTimeFormat("de-DE", { day: "numeric", month: "long", year: "numeric" }).format(new Date(ts));
+}
+
 export type Artikel = {
   slug: string;
   title: string;
@@ -73,7 +79,7 @@ export default function SpartippCard({ artikel }: { artikel: Artikel }) {
         </span>
       </div>
       <div className="p-5">
-        <p className="text-xs text-muted mb-2">{artikel.datum}</p>
+        <p className="text-xs text-muted mb-2">{formatDatumAnzeige(artikel.datum)}</p>
         <h3 className="font-bold text-foreground group-hover:text-primary transition-colors leading-snug">
           {loc.title}
         </h3>
