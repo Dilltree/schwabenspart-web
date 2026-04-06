@@ -88,7 +88,7 @@ const RECHNER = [
         <path d="M15 6a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-3 11.5V14l-3-3 4-3 2 3h2" />
       </svg>
     ),
-    available: false,
+    available: true,
   },
   {
     href: "/rechner/brutto-netto",
@@ -116,7 +116,7 @@ const RECHNER = [
         <line x1="14" y1="18" x2="16" y2="18" />
       </svg>
     ),
-    available: false,
+    available: true,
   },
 ];
 
