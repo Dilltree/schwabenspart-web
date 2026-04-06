@@ -168,6 +168,45 @@ const translations = {
   "calc.share": { de: "Ergebnis teilen", en: "Share result" },
   "calc.copied": { de: "Link kopiert!", en: "Link copied!" },
 
+  // Rechner Hub
+  "rechner.title": { de: "Finanz", en: "Finance" },
+  "rechner.title-accent": { de: "rechner", en: "Calculators" },
+  "rechner.subtitle": { de: "Kostenlos, ohne Anmeldung, schwäbisch ehrlich.", en: "Free, no signup, honestly Swabian." },
+  "rechner.breadcrumb": { de: "Rechner", en: "Calculators" },
+  "rechner.bald": { de: "Bald verfügbar", en: "Coming soon" },
+
+  // Budget rechner
+  "rechner.budget-title": { de: "50-30-20 Budgetrechner", en: "50-30-20 Budget Calculator" },
+  "rechner.budget-desc": { de: "Wie viel solltest du sparen? Teile dein Einkommen optimal auf.", en: "How much should you save? Split your income optimally." },
+
+  // ETF Sparplan
+  "rechner.etf-title": { de: "ETF-Sparplan Rechner", en: "ETF Savings Plan Calculator" },
+  "rechner.etf-desc": { de: "Berechne, wie dein Geld mit Zinseszins wächst.", en: "Calculate how your money grows with compound interest." },
+  "etf.einmalanlage": { de: "Einmalanlage (€)", en: "Initial investment (€)" },
+  "etf.sparrate": { de: "Monatliche Sparrate (€)", en: "Monthly savings (€)" },
+  "etf.rendite": { de: "Erwartete Rendite p.a.", en: "Expected return p.a." },
+  "etf.laufzeit": { de: "Anlagedauer (Jahre)", en: "Investment period (years)" },
+  "etf.eingezahlt": { de: "Eingezahlt", en: "Deposited" },
+  "etf.zinsen": { de: "Zinserträge", en: "Interest earned" },
+  "etf.endvermoegen": { de: "Endvermögen", en: "Final value" },
+  "etf.vergleich": { de: "Vergleich", en: "Comparison" },
+  "etf.kopfkissen": { de: "Kopfkissen", en: "Under the mattress" },
+  "etf.tagesgeld": { de: "Tagesgeld", en: "Savings account" },
+  "etf.dein-szenario": { de: "Dein Szenario", en: "Your scenario" },
+  "etf.depot-cta": { de: "Um diesen Sparplan umzusetzen, brauchst du ein Depot.", en: "To start this savings plan, you need a brokerage account." },
+  "etf.depot-link": { de: "Depot-Vergleich ansehen", en: "View broker comparison" },
+  "etf.share": { de: "Ergebnis teilen", en: "Share result" },
+  "etf.copied": { de: "Link kopiert!", en: "Link copied!" },
+  "etf.disclaimer": { de: "Die dargestellte Berechnung basiert auf einer gleichmäßigen, hypothetischen Wertentwicklung. Tatsächliche Renditen schwanken und können negativ sein. Dies ist keine Anlageberatung im Sinne des WpHG.", en: "This calculation is based on a steady, hypothetical growth rate. Actual returns fluctuate and can be negative. This is not investment advice." },
+
+  // Fahrradleasing
+  "rechner.leasing-title": { de: "Fahrradleasing Rechner", en: "Bike Leasing Calculator" },
+  "rechner.leasing-desc": { de: "Lohnt sich JobRad wirklich? Der ehrliche Vergleich.", en: "Is bike leasing really worth it? The honest comparison." },
+
+  // Brutto-Netto
+  "rechner.brutto-title": { de: "Brutto-Netto Rechner", en: "Gross-Net Calculator" },
+  "rechner.brutto-desc": { de: "Was bleibt vom Gehalt? Schnell und einfach berechnen.", en: "What's left of your salary? Quick and easy calculation." },
+
   // Search
   "search.title": { de: "Suche", en: "Search" },
   "search.subtitle": { de: "Finde Spartipps, News und Vergleiche", en: "Find saving tips, news and comparisons" },

@@ -99,7 +99,7 @@ export default function BudgetRechner() {
             <button
               type="button"
               onClick={handleShare}
-              className="inline-flex items-center gap-2 bg-accent text-white font-semibold px-6 py-3 rounded-full hover:bg-accent/90 transition-colors"
+              className="inline-flex items-center gap-2 bg-accent text-primary font-semibold px-6 py-3 rounded-full hover:bg-accent/90 transition-colors"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
