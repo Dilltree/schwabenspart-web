@@ -77,8 +77,40 @@ export default function FahrradleasingPage() {
         <span className="text-foreground">Fahrradleasing Rechner</span>
       </nav>
 
+      {/* Erklärung */}
+      <section className="max-w-3xl mx-auto px-4 sm:px-6 pt-12 pb-6">
+        <div className="bg-card rounded-2xl shadow-sm border border-foreground/5 p-6 sm:p-8 space-y-4">
+          <h2 className="text-xl font-bold text-foreground">So funktioniert Fahrradleasing</h2>
+          <div className="space-y-3 text-sm text-muted leading-relaxed">
+            <p>
+              Beim <strong className="text-foreground">Fahrradleasing über den Arbeitgeber</strong> (z.B. JobRad, Lease-a-Bike, BusinessBike)
+              wird die monatliche Leasingrate direkt von deinem <strong className="text-foreground">Bruttogehalt</strong> abgezogen —
+              das nennt sich Gehaltsumwandlung.
+            </p>
+            <p>
+              Dadurch sinkt dein zu versteuerndes Einkommen, und du zahlst weniger Lohnsteuer und Sozialabgaben.
+              Das ist der eigentliche Vorteil.
+            </p>
+            <div className="bg-foreground/5 rounded-xl p-4 space-y-2">
+              <p className="font-semibold text-foreground text-sm">Der Ablauf in 4 Schritten:</p>
+              <ol className="list-decimal list-inside space-y-1 text-sm">
+                <li>Du suchst dir ein Fahrrad aus — dein Arbeitgeber least es</li>
+                <li>Die Leasingrate wird monatlich von deinem <strong className="text-foreground">Bruttolohn</strong> abgezogen</li>
+                <li>Du versteuerst 0,25% des Listenpreises als geldwerten Vorteil</li>
+                <li>Nach {`{Laufzeit}`} Monaten: Übernahme zum Restwert (ca. 18%) oder Rückgabe</li>
+              </ol>
+            </div>
+            <p>
+              <strong className="text-foreground">Klingt gut — aber:</strong> Beim Leasing zahlst du immer den vollen Listenpreis (UVP).
+              Im Laden bekommst du oft 10-25% Rabatt. Das kann den Steuervorteil komplett auffressen.
+              Genau das rechnet unser Rechner für dich durch.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Calculator */}
-      <section className="max-w-6xl mx-auto px-4 sm:px-6 py-12">
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 py-6 pb-12">
         <FahrradleasingRechner />
       </section>
 

@@ -60,10 +60,12 @@ export default function FahrradleasingRechner() {
   const [kirchensteuer, setKirchensteuer] = useState(false);
   const [laufzeit, setLaufzeit] = useState<number>(36);
   const [rabatt, setRabatt] = useState(15);
+  const [versicherung, setVersicherung] = useState("10");
   const [copied, setCopied] = useState(false);
 
   const fahrradpreisVal = parseFloat(fahrradpreis) || 0;
   const bruttoVal = parseFloat(brutto) || 0;
+  const versicherungVal = parseFloat(versicherung) || 0;
   const hasInput = fahrradpreisVal > 0 && bruttoVal > 0;
 
   const result = useMemo(() => {
@@ -87,7 +89,8 @@ export default function FahrradleasingRechner() {
     const nettoErsparnis = abzugOhneLeasing - abzugMitLeasing;
 
     const effektivMonatlich = leasingRate - nettoErsparnis;
-    const gesamtLeasing = effektivMonatlich * laufzeit + uebernahme;
+    const versicherungGesamt = versicherungVal * laufzeit;
+    const gesamtLeasing = effektivMonatlich * laufzeit + uebernahme + versicherungGesamt;
 
     const rabattBetrag = fahrradpreisVal * (rabatt / 100);
     const barkaufPreis = fahrradpreisVal - rabattBetrag;
@@ -95,18 +98,26 @@ export default function FahrradleasingRechner() {
 
     const ersparnis = gesamtBarkauf - gesamtLeasing;
 
+    // Auswirkung auf Rente: weniger Brutto = weniger RV-Beiträge
+    const rvMinderbeitrag = Math.min(leasingRate, STEUER_2026.rv.bbg / 12) * STEUER_2026.rv.satz * 2; // AG+AN Anteil
+    const rentenVerlustMonatlich = rvMinderbeitrag * laufzeit / 12 * 0.0000340279; // Entgeltpunkte → Rente (ca. Faktor)
+    const rentenVerlustGesamt = rvMinderbeitrag * laufzeit;
+
     return {
       leasingRate,
       geldwerterVorteil,
       uebernahme,
       nettoErsparnis,
       effektivMonatlich,
+      versicherungGesamt,
       gesamtLeasing,
       rabattBetrag,
       gesamtBarkauf,
       ersparnis,
+      rentenVerlustGesamt,
+      steuerSvErsparnis: nettoErsparnis * laufzeit,
     };
-  }, [fahrradpreisVal, bruttoVal, steuerklasse, kirchensteuer, laufzeit, rabatt, hasInput]);
+  }, [fahrradpreisVal, bruttoVal, steuerklasse, kirchensteuer, laufzeit, rabatt, versicherungVal, hasInput]);
 
   const handleShare = useCallback(async () => {
     if (!result) return;
@@ -271,6 +282,30 @@ export default function FahrradleasingRechner() {
             Im Handel bekommst du oft 10-25% Rabatt auf den Listenpreis
           </p>
         </div>
+
+        {/* Versicherung */}
+        <div>
+          <label
+            htmlFor="versicherung"
+            className="block text-sm font-semibold text-foreground mb-2"
+          >
+            Versicherung pro Monat (€)
+          </label>
+          <input
+            id="versicherung"
+            type="number"
+            min="0"
+            step="1"
+            inputMode="decimal"
+            value={versicherung}
+            onChange={(e) => setVersicherung(e.target.value)}
+            placeholder="z.B. 10"
+            className="w-full px-4 py-3 rounded-xl border border-foreground/10 bg-background text-foreground placeholder:text-muted focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent text-lg"
+          />
+          <p className="text-xs text-muted mt-2">
+            Beim Leasing meist Pflicht (Diebstahl, Verschleiß). Typisch: 5-15 €/Monat. Bei Barkauf optional.
+          </p>
+        </div>
       </div>
 
       {/* Results */}
@@ -385,6 +420,12 @@ export default function FahrradleasingRechner() {
                   </span>
                 </div>
                 <div className="flex justify-between">
+                  <span className="text-muted">Geldwerter Vorteil/Monat</span>
+                  <span className="text-foreground">
+                    +{fmt2(result.geldwerterVorteil)} &euro;
+                  </span>
+                </div>
+                <div className="flex justify-between">
                   <span className="text-muted">
                     Steuer- &amp; SV-Ersparnis/Monat
                   </span>
@@ -392,8 +433,9 @@ export default function FahrradleasingRechner() {
                     -{fmt2(result.nettoErsparnis)} &euro;
                   </span>
                 </div>
-                <div className="flex justify-between">
-                  <span className="text-muted">Effektive Rate/Monat</span>
+                <hr className="border-foreground/10 border-dashed" />
+                <div className="flex justify-between font-medium">
+                  <span className="text-foreground">Effektive Rate/Monat</span>
                   <span className="text-foreground">
                     {fmt2(result.effektivMonatlich)} &euro;
                   </span>
@@ -408,12 +450,22 @@ export default function FahrradleasingRechner() {
                 </div>
                 <div className="flex justify-between">
                   <span className="text-muted">
-                    Übernahme (18%)
+                    Übernahme nach Leasing (18%)
                   </span>
                   <span className="text-foreground">
                     +{fmt(result.uebernahme)} &euro;
                   </span>
                 </div>
+                {versicherungVal > 0 && (
+                  <div className="flex justify-between">
+                    <span className="text-muted">
+                      Versicherung ({laufzeit} × {fmt(versicherungVal)} €)
+                    </span>
+                    <span className="text-foreground">
+                      +{fmt(result.versicherungGesamt)} &euro;
+                    </span>
+                  </div>
+                )}
                 <hr className="border-foreground/10" />
                 <div className="flex justify-between">
                   <span className="font-bold text-foreground text-base">
@@ -421,6 +473,12 @@ export default function FahrradleasingRechner() {
                   </span>
                   <span className="font-bold text-primary text-xl">
                     {fmt(result.gesamtLeasing)} &euro;
+                  </span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-xs text-muted">davon Steuer-/SV-Ersparnis</span>
+                  <span className="text-xs text-green-600">
+                    -{fmt(result.steuerSvErsparnis)} &euro;
                   </span>
                 </div>
               </div>
@@ -501,12 +559,118 @@ export default function FahrradleasingRechner() {
             </ul>
           </div>
 
+          {/* Detaillierte Aufschlüsselung */}
+          <div className="bg-card rounded-2xl shadow-sm border border-foreground/5 p-6 space-y-4">
+            <h3 className="text-sm font-semibold text-foreground">Detaillierte Kostenaufstellung</h3>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="border-b border-foreground/10">
+                    <th className="text-left py-2 text-muted font-medium">Position</th>
+                    <th className="text-right py-2 text-muted font-medium">Barkauf</th>
+                    <th className="text-right py-2 text-muted font-medium">Leasing</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-foreground/5">
+                  <tr>
+                    <td className="py-2 text-foreground">Anschaffungspreis</td>
+                    <td className="py-2 text-right text-foreground">{fmt(result.gesamtBarkauf)} €</td>
+                    <td className="py-2 text-right text-muted">—</td>
+                  </tr>
+                  <tr>
+                    <td className="py-2 text-foreground">Leasingraten ({laufzeit} × {fmt2(result.leasingRate)} €)</td>
+                    <td className="py-2 text-right text-muted">—</td>
+                    <td className="py-2 text-right text-foreground">{fmt(result.leasingRate * laufzeit)} €</td>
+                  </tr>
+                  <tr>
+                    <td className="py-2 text-foreground">Steuer- &amp; SV-Ersparnis</td>
+                    <td className="py-2 text-right text-muted">0 €</td>
+                    <td className="py-2 text-right text-green-600">-{fmt(result.steuerSvErsparnis)} €</td>
+                  </tr>
+                  <tr>
+                    <td className="py-2 text-foreground">Übernahme (18% Restwert)</td>
+                    <td className="py-2 text-right text-muted">—</td>
+                    <td className="py-2 text-right text-foreground">{fmt(result.uebernahme)} €</td>
+                  </tr>
+                  {versicherungVal > 0 && (
+                    <tr>
+                      <td className="py-2 text-foreground">Versicherung ({laufzeit} Monate)</td>
+                      <td className="py-2 text-right text-muted">optional</td>
+                      <td className="py-2 text-right text-foreground">{fmt(result.versicherungGesamt)} €</td>
+                    </tr>
+                  )}
+                  <tr className="border-t-2 border-foreground/20 font-bold">
+                    <td className="py-3 text-foreground">Gesamtkosten</td>
+                    <td className="py-3 text-right text-primary">{fmt(result.gesamtBarkauf)} €</td>
+                    <td className="py-3 text-right text-primary">{fmt(result.gesamtLeasing)} €</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          {/* Auswirkungen auf Sozialleistungen */}
+          <div className="bg-card rounded-2xl shadow-sm border border-foreground/5 p-6 space-y-4">
+            <h3 className="text-sm font-semibold text-foreground">Was du sonst noch wissen solltest</h3>
+            <div className="space-y-3 text-sm text-muted">
+              <div className="flex items-start gap-3">
+                <span className="bg-primary/10 text-primary rounded-lg p-1.5 mt-0.5 shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                </span>
+                <div>
+                  <p className="font-medium text-foreground">Weniger Rente</p>
+                  <p>Durch das niedrigere Brutto zahlst du über {laufzeit} Monate ca. <strong className="text-foreground">{fmt(result.rentenVerlustGesamt)} € weniger</strong> in die Rentenversicherung (AG+AN). Das reduziert deine spätere Monatsrente minimal.</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="bg-primary/10 text-primary rounded-lg p-1.5 mt-0.5 shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                </span>
+                <div>
+                  <p className="font-medium text-foreground">Weniger Elterngeld &amp; Krankengeld</p>
+                  <p>Beide werden vom Brutto berechnet. Wenn du in den nächsten {laufzeit} Monaten Elterngeld oder Krankengeld beantragen könntest, ist das relevant.</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="bg-primary/10 text-primary rounded-lg p-1.5 mt-0.5 shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                </span>
+                <div>
+                  <p className="font-medium text-foreground">Jobwechsel</p>
+                  <p>Bei einem Arbeitgeberwechsel muss der neue AG das Leasing übernehmen — oder du löst den Vertrag ab (oft zum vollen Restwert).</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="bg-accent/20 text-accent rounded-lg p-1.5 mt-0.5 shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                </span>
+                <div>
+                  <p className="font-medium text-foreground">Wann lohnt sich Leasing am meisten?</p>
+                  <p>Steuerklasse I, III oder IV, Brutto über 3.000 €, teures Fahrrad (ab 2.000 € UVP), und kein großer Rabatt im Handel verfügbar.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Schwaben-Fazit */}
+          <div className="bg-primary/5 rounded-2xl p-6 border border-primary/10">
+            <p className="text-sm font-semibold text-primary mb-2">Der Schwabe sagt:</p>
+            <p className="text-sm text-foreground italic">
+              {result.ersparnis > 300
+                ? `"${fmt(result.ersparnis)} Euro gspart — des isch a gscheids Vesper wert! Aber vergiss net: Beim Leasing bisch du ${laufzeit} Monat gebunde. Wer's Geld auf dr Seit hot, kauft lieber bar — ond handelt no an Rabatt raus."`
+                : result.ersparnis > 0
+                  ? `"${fmt(result.ersparnis)} Euro Ersparnis — net schlecht, aber au net berauschend. Überleg dir gut, ob dir die Bindung über ${laufzeit} Monat des wert isch. A Schwabe kauft nur, wenn's sich au wirklich rechnet."`
+                  : `"Barkauf isch hier ${fmt(Math.abs(result.ersparnis))} Euro günstiger. Do braucht mr net lang überlege — ab in Laden, Rabatt verhandle, ond fertig. Cash isch King, sagt dr Schwabe!"`
+              }
+            </p>
+          </div>
+
           {/* Share button */}
           <div className="text-center">
             <button
               type="button"
               onClick={handleShare}
-              className="inline-flex items-center gap-2 bg-accent text-white font-semibold px-6 py-3 rounded-full hover:bg-accent/90 transition-colors"
+              className="inline-flex items-center gap-2 bg-accent text-primary font-semibold px-6 py-3 rounded-full hover:bg-accent/90 transition-colors"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
