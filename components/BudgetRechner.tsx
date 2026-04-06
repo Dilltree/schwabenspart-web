@@ -17,7 +17,7 @@ export default function BudgetRechner() {
     const needs = formatAmount((value * 50) / 100);
     const wants = formatAmount((value * 30) / 100);
     const savings = formatAmount((value * 20) / 100);
-    const shareText = `Mein 50-30-20 Budget: ${needs}€ Bedürfnisse, ${wants}€ Wünsche, ${savings}€ Sparen. Berechne deins: schwabenspart.com/rechner`;
+    const shareText = `Mein 50-30-20 Budget: ${needs}€ Fixkosten, ${wants}€ Wünsche, ${savings}€ Sparen. Berechne deins: schwabenspart.com/rechner/budget`;
 
     if (navigator.share) {
       try {
@@ -38,9 +38,9 @@ export default function BudgetRechner() {
   }, [value]);
 
   const CATEGORIES = [
-    { label: t("calc.needs"), percent: 50, color: "bg-primary" },
-    { label: t("calc.wants"), percent: 30, color: "bg-primary-light" },
-    { label: t("calc.savings"), percent: 20, color: "bg-accent" },
+    { label: t("calc.needs"), percent: 50, color: "bg-primary", beispiele: t("calc.needs-examples") },
+    { label: t("calc.wants"), percent: 30, color: "bg-primary-light", beispiele: t("calc.wants-examples") },
+    { label: t("calc.savings"), percent: 20, color: "bg-accent", beispiele: t("calc.savings-examples") },
   ];
 
   return (
@@ -73,6 +73,7 @@ export default function BudgetRechner() {
                   <div>
                     <p className="font-bold text-foreground">{cat.label}</p>
                     <p className="text-muted text-sm">{cat.percent}% {t("calc.of-income")}</p>
+                    <p className="text-muted text-xs mt-1">{cat.beispiele}</p>
                   </div>
                   <p className="text-2xl font-bold text-primary">
                     {amount.toFixed(2).replace(".", ",")} €
