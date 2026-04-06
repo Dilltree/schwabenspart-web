@@ -8,6 +8,7 @@ const RECHNER = [
   { href: "/rechner/etf-sparplan", label: "ETF-Sparplan" },
   { href: "/rechner/fahrradleasing", label: "Fahrradleasing" },
   { href: "/rechner/brutto-netto", label: "Brutto-Netto" },
+  { href: "/rechner/inflation", label: "Inflation" },
 ];
 
 export default function RechnerNav() {

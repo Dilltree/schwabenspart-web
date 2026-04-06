@@ -118,6 +118,32 @@ const RECHNER = [
     ),
     available: true,
   },
+  {
+    href: "/rechner/inflation",
+    title: "Inflationsrechner",
+    description:
+      "Was ist dein Geld noch wert? Kaufkraftverlust sichtbar machen.",
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="32"
+        height="32"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <circle cx="12" cy="12" r="8" />
+        <line x1="12" y1="8" x2="12" y2="12" />
+        <line x1="12" y1="16" x2="12" y2="16.01" />
+        <polyline points="22 17 18 13 14 17" />
+        <line x1="18" y1="13" x2="18" y2="21" />
+      </svg>
+    ),
+    available: true,
+  },
 ];
 
 export default function RechnerHubPage() {
