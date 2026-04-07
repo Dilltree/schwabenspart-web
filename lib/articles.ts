@@ -16,24 +16,24 @@ export const NACHRICHTEN: Artikel[] = [
     schwabenKommentar: "Wenn d'r Sprit so teuer isch, dann bleibt's Auto halt mol steh. Der Schwabe nimmt des Rad oder fährt mit'm Bus — ond spart sich des Geld für was G'scheits!",
     content: `Die Spritpreise in Deutschland haben ein neues Jahreshoch erreicht. Super E10 kostet an vielen Tankstellen über 2,10€ pro Liter, Diesel liegt bei rund 1,95€. Die Gründe sind vielfältig: geopolitische Spannungen im Nahen Osten, eine gedrosselte Ölförderung der OPEC+ und der schwache Euro gegenüber dem Dollar.
 
-## Was plant die Politik?
+Was plant die Politik?
 
 Die Finanzminister aus Deutschland, Spanien, Portugal, Österreich und Italien haben eine gemeinsame Initiative gestartet: Sie fordern die EU-weite Einführung einer Übergewinnsteuer auf Krisenprofite von Energiekonzernen. Die Idee dahinter: Wenn Ölkonzerne von Krisen überproportional profitieren, soll ein Teil dieser Gewinne abgeschöpft und an die Verbraucher zurückgegeben werden.
 
 SPD-Chef Lars Klingbeil bringt zusätzlich ein Tempolimit ins Spiel — nicht nur als Umweltmaßnahme, sondern als konkretes Signal gegen hohen Spritverbrauch.
 
-## Was bedeutet das für deinen Geldbeutel?
+Was bedeutet das für deinen Geldbeutel?
 
 Wer täglich 30 Kilometer zur Arbeit pendelt, zahlt bei aktuellen Preisen rund **250€ pro Monat** allein für Benzin. Das sind fast 50€ mehr als noch vor einem Jahr.
 
-**Konkrete Spartipps:**
+Konkrete Spartipps:
 - Tankstellen-Apps nutzen (clever-tanken, ADAC) — die Preisunterschiede betragen oft 10-15 Cent pro Liter
 - Zwischen 18 und 20 Uhr tanken — statistisch die günstigste Zeit
 - Fahrgemeinschaften bilden — halbiert die Kosten sofort
 - Reifendruck prüfen — zu wenig Druck kostet bis zu 5% mehr Sprit
 - Tempomat nutzen — gleichmäßiges Fahren spart bis zu 10%
 
-## Wie geht es weiter?
+Wie geht es weiter?
 
 Die EU-Kommission wird den Vorschlag zur Übergewinnsteuer voraussichtlich im Mai prüfen. Bis dahin bleibt Verbrauchern nur, clever zu tanken und wo möglich auf Alternativen umzusteigen.`,
   },
@@ -51,7 +51,7 @@ Die EU-Kommission wird den Vorschlag zur Übergewinnsteuer voraussichtlich im Ma
     schwabenKommentar: "Wenn d'Bank koi Zinsa zahlt, dann muss mr halt selber schaffe. A guter ETF-Sparplan bringt mehr als jedes Sparbuch — des woiß jeder Schwabe!",
     content: `Die Europäische Zentralbank (EZB) hat auf ihrer letzten Sitzung entschieden, den Leitzins unverändert bei 3,50% zu belassen. EZB-Präsidentin Christine Lagarde betonte, dass die Inflation zwar rückläufig sei, aber noch nicht auf dem Zielniveau von 2% angekommen ist.
 
-## Was heißt das für Sparer?
+Was heißt das für Sparer?
 
 **Tagesgeld:** Die Zinsen auf Tagesgeldkonten bleiben vorerst stabil. Die besten Angebote liegen aktuell zwischen 2,5% und 3,0% — deutlich mehr als noch vor zwei Jahren, aber unter dem Inflationsniveau. Dein Geld verliert also real an Wert, wenn es nur auf dem Tagesgeldkonto liegt.
 
@@ -59,14 +59,14 @@ Die EU-Kommission wird den Vorschlag zur Übergewinnsteuer voraussichtlich im Ma
 
 **Baufinanzierung:** Baukredit-Zinsen liegen aktuell bei rund 3,8% für 10 Jahre Zinsbindung. Das ist deutlich höher als die Niedrigzinsphase 2020-2022, aber historisch gesehen immer noch moderat.
 
-## Was solltest du jetzt tun?
+Was solltest du jetzt tun?
 
 1. **Tagesgeld-Hopping vermeiden** — die Unterschiede zwischen den Top-Anbietern sind minimal
 2. **Festgeld prüfen** — wenn du Geld für 1-2 Jahre nicht brauchst, lohnt sich das aktuell
 3. **ETF-Sparplan weiterlaufen lassen** — langfristig schlägt der Aktienmarkt jedes Sparkonto
 4. **Baufinanzierung:** Wer kaufen will, sollte nicht auf niedrigere Zinsen spekulieren — niemand weiß, wohin die Reise geht
 
-## Ausblick
+Ausblick
 
 Die nächste EZB-Sitzung ist am 5. Juni 2026. Analysten rechnen frühestens im Herbst mit einer möglichen Zinssenkung — aber nur, wenn die Inflation weiter sinkt.`,
   },
@@ -84,7 +84,7 @@ Die nächste EZB-Sitzung ist am 5. Juni 2026. Analysten rechnen frühestens im H
     schwabenKommentar: "Wenn alle Angst hend ond verkaufa, dann isch des genau der Moment wo der Schwabe zuschlägt. Günstig eikaufa — des gilt au an der Börs!",
     content: `Der DAX ist diese Woche auf 23.168 Punkte gefallen — ein Minus von über 500 Punkten gegenüber dem Allzeithoch von 25.507 Punkten. Die Nervosität an den Märkten hat mehrere Ursachen.
 
-## Was drückt die Kurse?
+Was drückt die Kurse?
 
 **Energiekrise 2.0:** Die hohen Ölpreise belasten vor allem energieintensive Unternehmen. Chemie-Konzerne wie BASF und Covestro stehen besonders unter Druck.
 
@@ -92,7 +92,7 @@ Die nächste EZB-Sitzung ist am 5. Juni 2026. Analysten rechnen frühestens im H
 
 **Luxusbranche schwächelt:** Auch der bisher krisenresistente Luxussektor zeigt Schwäche. Unternehmen wie LVMH und Kering melden rückläufige Umsätze — ein Signal, dass auch wohlhabende Konsumenten vorsichtiger werden.
 
-## Die Zahlen im Überblick
+Die Zahlen im Überblick
 
 | Index | Stand | Veränderung |
 |---|---|---|
@@ -101,7 +101,7 @@ Die nächste EZB-Sitzung ist am 5. Juni 2026. Analysten rechnen frühestens im H
 | Euro Stoxx 50 | ca. 5.400 | -0,72% |
 | S&P 500 | 6.582 | +0,11% |
 
-## Was sollten Privatanleger jetzt tun?
+Was sollten Privatanleger jetzt tun?
 
 **Ruhe bewahren.** Korrekturen von 5-10% sind an der Börse völlig normal und passieren im Schnitt einmal pro Jahr. Wer einen ETF-Sparplan hat, profitiert jetzt sogar: Du kaufst die gleichen Anteile günstiger.
 
@@ -123,24 +123,24 @@ Die nächste EZB-Sitzung ist am 5. Juni 2026. Analysten rechnen frühestens im H
     schwabenKommentar: "A eigene vier Wänd — des isch der Traum von jedem Schwaben. Aber zum aktuelle Preis? Da wartet der kluge Schwabe lieber noch a Weilche ond spart weiter.",
     content: `Vizekanzler Lars Klingbeil (SPD) hat ein Konzept für eine neue staatliche Wohnungsbau-Gesellschaft vorgestellt. Die Bundesfirma soll dort bauen, wo der private Markt versagt — vor allem in Ballungsräumen mit extremem Wohnungsmangel.
 
-## Das Problem
+Das Problem
 
 In Deutschland fehlen nach Schätzungen des Pestel-Instituts rund 800.000 Wohnungen. Besonders betroffen sind München, Berlin, Hamburg, Frankfurt und Stuttgart. Die Folge: Mieten steigen seit Jahren schneller als die Löhne. Eine durchschnittliche Zwei-Zimmer-Wohnung in München kostet inzwischen über 1.400€ kalt.
 
 Gleichzeitig sind die Baukosten durch hohe Materialpreise und Zinsen massiv gestiegen. Viele private Bauträger haben Projekte auf Eis gelegt — 2025 wurden so wenige Baugenehmigungen erteilt wie seit 2012 nicht mehr.
 
-## Was plant Klingbeil konkret?
+Was plant Klingbeil konkret?
 
 - Eine **Bundesbau-Gesellschaft**, die jährlich 50.000-100.000 Wohnungen bauen soll
 - Fokus auf **bezahlbaren Wohnraum** (Mieten unter 10€/m²)
 - **Öffentliche Grundstücke** sollen bevorzugt für Sozialwohnungen genutzt werden
 - Finanzierung über **Bundesanleihen** und KfW-Kredite
 
-## Was bedeutet das für Mieter?
+Was bedeutet das für Mieter?
 
 Kurzfristig: wenig. Selbst wenn die Firma schnell gegründet wird, dauert es Jahre, bis die ersten Wohnungen stehen. Mittelfristig könnte ein größeres Angebot aber den Mietanstieg bremsen.
 
-## Was bedeutet das für Immobilienkäufer?
+Was bedeutet das für Immobilienkäufer?
 
 Die Immobilienpreise sind seit 2022 bereits um 10-15% gefallen. Ob es jetzt der richtige Zeitpunkt zum Kaufen ist, hängt stark von der individuellen Situation ab:
 
@@ -162,7 +162,7 @@ Die Immobilienpreise sind seit 2022 bereits um 10-15% gefallen. Ob es jetzt der 
     schwabenKommentar: "Krypto isch wie's Wetter im Schwabenland — morgens Sonne, mittags Gewitter. Wer da investiert, sollte nur Geld nehma, wo er au verliera ka. Der Rest kommt aufs Tagesgeld!",
     content: `Bitcoin hat die Marke von 58.000€ überschritten und zeigt sich seit Wochen stabil. Die Gesamtmarktkapitalisierung aller Kryptowährungen liegt bei rund 2,07 Billionen Euro, wobei Bitcoin mit einer Dominanz von 56,2% weiterhin die wichtigste Kryptowährung bleibt.
 
-## Warum steigt Bitcoin?
+Warum steigt Bitcoin?
 
 Mehrere Faktoren treiben den Kurs:
 
@@ -170,18 +170,18 @@ Mehrere Faktoren treiben den Kurs:
 2. **Halving-Effekt:** Das letzte Bitcoin-Halving im April 2024 hat das Angebot an neuen Bitcoins halbiert — weniger Angebot bei steigender Nachfrage treibt den Preis
 3. **Inflationsschutz:** Viele Anleger sehen Bitcoin als digitales Gold — als Absicherung gegen Geldentwertung
 
-## Die aktuelle Lage
+Die aktuelle Lage
 
 | Kryptowährung | Kurs | 24h-Änderung |
 |---|---|---|
 | Bitcoin (BTC) | ~58.000€ | +0,8% |
 | Ethereum (ETH) | ~1.780€ | +0,3% |
 
-## Lohnt sich der Einstieg?
+Lohnt sich der Einstieg?
 
 Die ehrliche Antwort: **Niemand weiß es.** Bitcoin könnte in einem Jahr bei 100.000€ stehen — oder bei 30.000€. Die Volatilität ist enorm.
 
-**Für wen Krypto infrage kommt:**
+Für wen Krypto infrage kommt:
 - Du hast bereits einen Notgroschen (3-6 Monatsgehälter)
 - Du hast einen ETF-Sparplan als Basis-Investment
 - Du kannst mit 50-80% Kursverlust leben, ohne schlecht zu schlafen
@@ -205,7 +205,7 @@ Die ehrliche Antwort: **Niemand weiß es.** Bitcoin könnte in einem Jahr bei 10
     schwabenKommentar: "Gold isch wie a schwäbisches Haus — es verliert nie ganz an Wert. Aber kaufa solltest du's net, wenn alle kaufa. Der Schwabe kauft, wenn's niemand will!",
     content: `Der Goldpreis hat ein neues Allzeithoch erreicht. Eine Feinunze (31,1 Gramm) kostet aktuell über 3.100 US-Dollar — das entspricht rund 2.690€. Seit Jahresbeginn ist Gold damit um fast 15% gestiegen.
 
-## Warum steigt Gold?
+Warum steigt Gold?
 
 **Geopolitische Unsicherheit:** Der Iran-Konflikt, die Spannungen um die Straße von Hormus und die globale Unsicherheit treiben Anleger in sichere Häfen. Gold gilt seit Jahrtausenden als Krisenwährung.
 
@@ -213,7 +213,7 @@ Die ehrliche Antwort: **Niemand weiß es.** Bitcoin könnte in einem Jahr bei 10
 
 **Inflationsschutz:** Auch wenn die Inflation sinkt, bleibt die Angst vor Geldentwertung. Gold hat über Jahrhunderte seinen Wert behalten — im Gegensatz zu jeder Papierwährung.
 
-## Sollte ich Gold kaufen?
+Sollte ich Gold kaufen?
 
 Gold eignet sich als **Beimischung**, nicht als Hauptinvestment:
 
@@ -221,7 +221,7 @@ Gold eignet sich als **Beimischung**, nicht als Hauptinvestment:
 - **Vorteil:** Krisenschutz, unabhängig von Bankensystem, weltweit anerkannt
 - **Nachteil:** Keine Zinsen, keine Dividenden — Gold arbeitet nicht für dich
 
-## Wie kauft man Gold?
+Wie kauft man Gold?
 
 | Variante | Vorteil | Nachteil |
 |---|---|---|
@@ -245,7 +245,7 @@ Gold eignet sich als **Beimischung**, nicht als Hauptinvestment:
     schwabenKommentar: "Jaa, das mit dem E-Auto klingt gut, aber ich hab' schon viel über die Ladezeiten gehört. Es muss ja nicht immer der schnelle Sprit sein. Vielleicht wird's ja auch mit dem Strom irgendwann geschmeidiger!",
     content: `Bei Spritpreisen von über 2 Euro pro Liter überlegen immer mehr Menschen, den Umstieg auf ein E-Auto zu wagen. Aber lohnt sich der Kauf eines gebrauchten Elektrofahrzeugs wirklich?
 
-## Die Preise auf dem Gebrauchtmarkt
+Die Preise auf dem Gebrauchtmarkt
 
 | Modell | Baujahr | Kilometerstand | Preis |
 |---|---|---|---|
@@ -254,7 +254,7 @@ Gold eignet sich als **Beimischung**, nicht als Hauptinvestment:
 | VW e-Golf | 2019 | 20.000 km | 22.000€ |
 | Hyundai Ioniq | 2018 | 35.000 km | 18.000€ |
 
-## Betriebskosten: E-Auto vs. Verbrenner
+Betriebskosten: E-Auto vs. Verbrenner
 
 Nehmen wir 15.000 km pro Jahr:
 
@@ -265,20 +265,19 @@ Nehmen wir 15.000 km pro Jahr:
 | Kfz-Steuer | 0€ (5 Jahre befreit) | ca. 200€ |
 | **Gesamt** | **637€** | **2.900€** |
 
-**Ersparnis pro Jahr: über 2.200€**
-
-## Amortisation
+Ersparnis pro Jahr: über 2.200€
+Amortisation
 
 Ein gebrauchter Nissan Leaf für 17.500€ amortisiert sich durch die Betriebskostenersparnis in **ca. 5,5 Jahren**. Danach sparst du jedes Jahr über 2.000€.
 
-## Worauf du beim Kauf achten solltest
+Worauf du beim Kauf achten solltest
 
 - **Batteriezustand prüfen** — lass den SoH (State of Health) auslesen, idealerweise über 80%
 - **Ladeinfrastruktur** — hast du eine Wallbox oder Lademöglichkeit in der Nähe?
 - **Reichweite** — ältere Modelle schaffen 150-250 km, reicht das für deinen Alltag?
 - **Service-Historie** — alle Inspektionen vorhanden?
 
-## Fazit
+Fazit
 
 Für Pendler mit täglichen Strecken unter 100 km ist ein gebrauchtes E-Auto fast immer günstiger als ein Verbrenner. Die Rechnung ist eindeutig: über 2.000€ weniger pro Jahr.`,
   },
@@ -296,24 +295,24 @@ Für Pendler mit täglichen Strecken unter 100 km ist ein gebrauchtes E-Auto fas
     schwabenKommentar: "Also, das mit den Sprit-Preisen ist wirklich verrückt. Ich schau auch immer wieder, wo ich noch einen Euro sparen kann beim Tanken. Und der Fahrgemeinschafts-Trick ist Gold wert!",
     content: `Die Spritpreise haben ein neues Rekordhoch erreicht — Super E10 über 2,10€, Diesel bei 1,95€. Hier sind 5 Tricks, die du sofort umsetzen kannst.
 
-## Tipp 1: Zur richtigen Zeit tanken
+Tipp 1: Zur richtigen Zeit tanken
 
 Die Preise schwanken täglich um bis zu **15 Cent pro Liter**. Am günstigsten ist es statistisch zwischen **18 und 20 Uhr**. Am teuersten: morgens zwischen 6 und 8 Uhr.
 
 **Ersparnis bei 50 Litern:** bis zu 7,50€ pro Tankfüllung.
 
-## Tipp 2: Tankstellen-Apps nutzen
+Tipp 2: Tankstellen-Apps nutzen
 
 Apps wie **clever-tanken** oder die **ADAC Spritpreise App** zeigen dir die günstigsten Tankstellen in deiner Umgebung.
 
-## Tipp 3: Sparsam fahren
+Tipp 3: Sparsam fahren
 
 - **Tempo 100 statt 130** spart 0,5-1 Liter auf 100 km
 - **Reifendruck prüfen** — zu wenig kostet bis zu 5% mehr Sprit
 - **Tempomat nutzen** — gleichmäßiges Fahren spart bis zu 10%
 - **Motor aus** bei Wartezeiten über 20 Sekunden
 
-## Tipp 4: Fahrgemeinschaften bilden
+Tipp 4: Fahrgemeinschaften bilden
 
 Über **BlaBlaCar** oder lokale Facebook-Gruppen findest du Mitfahrer. Wenn du die Kosten mit 2 Personen teilst, halbierst du deine Spritkosten sofort.
 
@@ -323,7 +322,7 @@ Apps wie **clever-tanken** oder die **ADAC Spritpreise App** zeigen dir die gün
 | Fahrgemeinschaft (2 Personen) | ca. 125€ |
 | Fahrgemeinschaft (3 Personen) | ca. 83€ |
 
-## Tipp 5: Alternativen prüfen
+Tipp 5: Alternativen prüfen
 
 | Alternative | Ersparnis vs. Auto |
 |---|---|
@@ -331,7 +330,7 @@ Apps wie **clever-tanken** oder die **ADAC Spritpreise App** zeigen dir die gün
 | E-Bike (bei <15km) | ca. 200€/Monat |
 | Homeoffice (2 Tage/Woche) | ca. 100€/Monat |
 
-## Zusammenfassung
+Zusammenfassung
 
 | Spartipp | Mögliche Ersparnis/Monat |
 |---|---|
@@ -357,7 +356,7 @@ Apps wie **clever-tanken** oder die **ADAC Spritpreise App** zeigen dir die gün
     schwabenKommentar: "Wenn mer en zünftige Schwabe isch, muss er jetzt halt cleverer werden! A bisserl streuen, do kunts au in stürmischen Zeiten durchs Leben.",
     content: `Die Märkte sind nervös, die Inflation frisst am Ersparten. Was tun? Hier eine nüchterne Einordnung — ohne Panik, ohne Hype.
 
-## Die aktuelle Lage
+Die aktuelle Lage
 
 | Faktor | Stand | Auswirkung |
 |---|---|---|
@@ -366,21 +365,21 @@ Apps wie **clever-tanken** oder die **ADAC Spritpreise App** zeigen dir die gün
 | DAX | 23.168 Punkte | -9% unter Allzeithoch |
 | Gold | über 3.100 USD/oz | Rekordhoch |
 
-## Die 4-Säulen-Strategie
+Die 4-Säulen-Strategie
 
-### Säule 1: Notgroschen (Tagesgeld)
+Säule 1: Notgroschen (Tagesgeld)
 **3-6 Monatsgehälter** auf einem Tagesgeldkonto parken. Das ist dein Sicherheitsnetz — nicht antasten.
 
-### Säule 2: Mittelfristig (Festgeld)
+Säule 2: Mittelfristig (Festgeld)
 Geld, das du 1-3 Jahre nicht brauchst, in **Festgeld** mit 3,0-3,5% Zinsen anlegen. Kein Risiko, feste Rendite.
 
-### Säule 3: Langfristig (ETF-Sparplan)
+Säule 3: Langfristig (ETF-Sparplan)
 Alles was 10+ Jahre Zeit hat, gehört in einen **breit gestreuten ETF** (z.B. MSCI World). Historische Rendite: **7-8% pro Jahr**.
 
-### Säule 4: Beimischung (5-10%)
+Säule 4: Beimischung (5-10%)
 Je nach Risikotoleranz: **Gold**, **Immobilien-ETFs** oder maximal **5% Krypto**.
 
-## Rechenbeispiel: 500€/Monat aufteilen
+Rechenbeispiel: 500€/Monat aufteilen
 
 | Säule | Anteil | Betrag | Wohin |
 |---|---|---|---|
@@ -389,13 +388,13 @@ Je nach Risikotoleranz: **Gold**, **Immobilien-ETFs** oder maximal **5% Krypto**
 | Langfristig | 50% | 250€ | MSCI World ETF-Sparplan |
 | Beimischung | 10% | 50€ | Gold-ETC oder Krypto |
 
-## Die 3 größten Fehler in Krisenzeiten
+Die 3 größten Fehler in Krisenzeiten
 
 1. **Alles auf dem Girokonto lassen** — bei 2% Inflation verlierst du real 200€ pro 10.000€ jedes Jahr
 2. **Panikverkäufe** — wer 2020 beim Corona-Crash verkauft hat, hat 30% Erholung verpasst
 3. **Auf den perfekten Zeitpunkt warten** — den gibt es nicht. Time in the market schlägt Timing the market
 
-## Fazit
+Fazit
 
 Unsichere Zeiten sind kein Grund, nichts zu tun — im Gegenteil. Die 4-Säulen-Strategie gibt dir Sicherheit UND Rendite. Fang mit dem an, was du kontrollieren kannst: Notgroschen aufbauen, Sparplan starten, Kosten senken.`,
   },

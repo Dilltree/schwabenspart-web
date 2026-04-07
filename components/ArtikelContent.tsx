@@ -14,14 +14,25 @@ function renderContent(content: string) {
     const line = lines[i];
     if (line.trim() === "") { i++; continue; }
 
+    // Legacy: ## und ### Marker (alte Artikel)
     if (line.startsWith("### ")) {
-      elements.push(<p key={i} className="text-base font-bold text-foreground mt-6 mb-2">{line.slice(4)}</p>);
+      elements.push(<p key={i} className="text-lg text-foreground mt-6 mb-2">{line.slice(4)}</p>);
       i++; continue;
     }
 
     if (line.startsWith("## ")) {
-      elements.push(<p key={i} className="text-lg font-bold text-foreground mt-8 mb-3">{line.slice(3)}</p>);
+      elements.push(<p key={i} className="text-lg text-foreground mt-8 mb-3">{line.slice(3)}</p>);
       i++; continue;
+    }
+
+    // Überschriften-Erkennung: Kurze Zeilen (< 80 Zeichen) ohne Satzzeichen am Ende
+    const trimmed = line.trim();
+    if (trimmed.length > 0 && trimmed.length < 80 && !trimmed.endsWith(".") && !trimmed.endsWith("!") && !trimmed.endsWith("?") && !trimmed.endsWith(":") && !trimmed.startsWith("-") && !trimmed.startsWith("1") && !trimmed.includes("|") && !trimmed.startsWith("**")) {
+      const nextLine = lines[i + 1]?.trim();
+      if (nextLine && nextLine.length > 80) {
+        elements.push(<p key={i} className="text-lg text-foreground mt-8 mb-3">{trimmed}</p>);
+        i++; continue;
+      }
     }
 
     if (line.includes("|") && lines[i + 1]?.includes("---")) {
