@@ -119,6 +119,31 @@ const RECHNER = [
     available: true,
   },
   {
+    href: "/rechner/nebengewerbe",
+    title: "Nebengewerbe Rechner",
+    description:
+      "Was bleibt vom Nebenverdienst? Mit Kleinunternehmer-Check & Gewerbesteuer.",
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="32"
+        height="32"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <path d="M20 7h-4V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z" />
+        <line x1="10" y1="5" x2="14" y2="5" />
+        <line x1="12" y1="12" x2="12" y2="16" />
+        <line x1="10" y1="14" x2="14" y2="14" />
+      </svg>
+    ),
+    available: true,
+  },
+  {
     href: "/rechner/inflation",
     title: "Inflationsrechner",
     description:
