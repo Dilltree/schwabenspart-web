@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Impressum",
-  description: "Impressum von schwabenspart — Angaben gemäß § 5 TMG.",
+  description: "Impressum von Dilltree Apps — Angaben gemäß § 5 TMG.",
 };
 
 export default function ImpressumPage() {
@@ -29,6 +29,8 @@ export default function ImpressumPage() {
           <a href="mailto:schwabenspart@googlemail.com" className="text-primary hover:underline">
             schwabenspart@googlemail.com
           </a>
+          <br />
+          <span className="text-sm">(Allgemeine Anfragen: Dillbaum@googlemail.com)</span>
         </p>
       </section>
 
@@ -44,10 +46,10 @@ export default function ImpressumPage() {
       <section>
         <h2 className="text-lg font-bold text-foreground mb-3">Haftungsausschluss</h2>
         <p className="text-muted leading-relaxed">
-          Die auf dieser Website und in der App bereitgestellten Informationen und KI-generierten Hinweise
-          dienen ausschließlich allgemeinen Informationszwecken und stellen keine Finanz-, Steuer- oder
-          Rechtsberatung dar. Der Anbieter übernimmt keine Haftung für Entscheidungen, die auf Basis
-          der Inhalte getroffen werden.
+          Die auf dieser Website und in der App bereitgestellten Informationen und KI-generierten
+          Hinweise dienen ausschließlich allgemeinen Informationszwecken und stellen keine Finanz-,
+          Steuer- oder Rechtsberatung dar. Der Anbieter übernimmt keine Haftung für Entscheidungen,
+          die auf Basis der Inhalte getroffen werden.
         </p>
       </section>
 
