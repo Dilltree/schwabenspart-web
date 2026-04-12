@@ -15,6 +15,7 @@ export default function ImpressumPage() {
         <h2 className="text-lg font-bold text-foreground mb-3">Anbieter</h2>
         <p className="text-muted leading-relaxed">
           Daniel Dillbaum<br />
+          Dilltree Apps<br />
           An den Weihern 45<br />
           51467 Bergisch Gladbach<br />
           Deutschland
