@@ -32,9 +32,9 @@ export const metadata: Metadata = {
       "max-video-preview": -1,
     },
   },
-  verification: {
-    google: "DEIN_GOOGLE_VERIFICATION_CODE",
-  },
+  verification: process.env.GOOGLE_SITE_VERIFICATION
+    ? { google: process.env.GOOGLE_SITE_VERIFICATION }
+    : undefined,
   alternates: {
     canonical: "/",
   },
@@ -47,12 +47,20 @@ export const metadata: Metadata = {
       "Alte schwäbische Sparmentalität trifft moderne Finanztipps. Tägliche News, Vergleiche und Spartipps vom Schwaben.",
     images: [
       {
-        url: "/logos/logo.png",
-        width: 512,
-        height: 512,
-        alt: "schwabenspart Logo",
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "schwabenspart — Haushaltsbuch, Spartipps und Finanznews",
+        type: "image/png",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "schwabenspart — Spartipps, Finanznews & Deals",
+    description:
+      "Alte schwäbische Sparmentalität trifft moderne Finanztipps.",
+    images: ["/og-image.png"],
   },
 };
 
