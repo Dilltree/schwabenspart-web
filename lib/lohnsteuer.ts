@@ -3,6 +3,10 @@
  * (z.B. Teilzeit). Zentralisiert die Steuer-/SV-Logik damit Aenderungen
  * an einer Stelle wirken.
  *
+ * Genutzt von:
+ *   - components/BruttoNettoRechner.tsx  (/rechner/brutto-netto)
+ *   - components/TeilzeitRechner.tsx     (/rechner/teilzeit)
+ *
  * Hinweis: Vereinfachter progressiver Tarif gemaess STEUER_2026 — keine
  * amtliche Lohnsteuer-Tabelle. Liefert Naeherungswerte, keine
  * Steuerberatung (StBerG).
