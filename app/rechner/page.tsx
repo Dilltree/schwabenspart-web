@@ -91,6 +91,29 @@ const RECHNER = [
     available: true,
   },
   {
+    href: "/rechner/teilzeit",
+    title: "Teilzeit-Rechner",
+    description:
+      "Wie viel Brutto und Netto bleiben bei reduzierter Stundenzahl? Vergleich Vollzeit vs. Teilzeit.",
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="32"
+        height="32"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <circle cx="12" cy="12" r="10" />
+        <polyline points="12 6 12 12 16 14" />
+      </svg>
+    ),
+    available: true,
+  },
+  {
     href: "/rechner/brutto-netto",
     title: "Brutto-Netto Rechner",
     description: "Was bleibt vom Gehalt? Schnell und einfach berechnen.",
