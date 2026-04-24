@@ -7,6 +7,8 @@
  *   - components/BruttoNettoRechner.tsx  (/rechner/brutto-netto)
  *   - components/TeilzeitRechner.tsx     (/rechner/teilzeit)
  *
+ * Datengrundlage 2026: STEUER_2026 in lib/steuer-konstanten.ts.
+ *
  * Hinweis: Vereinfachter progressiver Tarif gemaess STEUER_2026 — keine
  * amtliche Lohnsteuer-Tabelle. Liefert Naeherungswerte, keine
  * Steuerberatung (StBerG).
