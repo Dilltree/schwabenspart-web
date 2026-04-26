@@ -71,9 +71,12 @@ export default function DatenschutzPage() {
         </p>
         <p className="text-muted leading-relaxed mt-3">
           <strong className="text-foreground">Hinweis USA-Transfer:</strong> Anthropic, Inc. ist in
-          den USA ansässig. Die Übermittlung erfolgt auf Grundlage der Standardvertragsklauseln
-          der EU-Kommission (Art. 46 Abs. 2 lit. c DSGVO) gemäß der Datenschutzrichtlinie von
-          Anthropic (<a href="https://www.anthropic.com/privacy" className="text-primary hover:underline" target="_blank" rel="noopener">anthropic.com/privacy</a>).
+          den USA ansässig. Die Übermittlung erfolgt auf Grundlage eines abgeschlossenen
+          Datenverarbeitungs-Zusatzes (DPA) mit Standardvertragsklauseln der EU-Kommission
+          (Art. 46 Abs. 2 lit. c DSGVO i.V.m. Durchführungsbeschluss 2021/914, Modul 2). Anthropic
+          nutzt die übermittelten Eingaben nicht für Modelltraining (API-Setting „Do not use my
+          data for training" aktiviert). Datenschutzrichtlinie von Anthropic:
+          <a href="https://www.anthropic.com/privacy" className="text-primary hover:underline ml-1" target="_blank" rel="noopener">anthropic.com/privacy</a>.
         </p>
         <p className="text-muted leading-relaxed mt-2 text-sm">
           Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung durch aktive Nutzung der Funktion).
@@ -85,14 +88,20 @@ export default function DatenschutzPage() {
       <section>
         <h2 className="text-lg font-bold text-foreground mb-3">5. Kassenbon-Scanner</h2>
         <p className="text-muted leading-relaxed">
-          Wenn Sie den Kassenbon-Scanner nutzen, wird das aufgenommene Bild (als verschlüsselter
-          Base64-String) über Supabase (EU-Server) an die Anthropic API (USA) zur automatischen
-          Texterkennung übermittelt. Kassenbons können Namen, Adressen oder andere personenbezogene
-          Angaben enthalten.
+          Wenn Sie den Kassenbon-Scanner nutzen, wird das aufgenommene Bild (als Base64-kodierter
+          Datenstrom über TLS) über Supabase (EU-Server Frankfurt) an die Anthropic API (USA) zur
+          automatischen Texterkennung übermittelt. Kassenbons können personenbezogene Angaben
+          Dritter enthalten (z. B. Kassierer-Namen, personalisierte Kundennamen auf Lieferquittungen).
+          Der KI-Dienst wird durch unseren System-Prompt ausdrücklich angewiesen, Personennamen und
+          identifizierende Merkmale auf Bons nicht zu erfassen und ausschließlich Beträge,
+          Produktbezeichnungen und Gesamtsumme zu extrahieren.
         </p>
         <p className="text-muted leading-relaxed mt-3">
-          Das Bild wird nach der Verarbeitung nicht auf unseren Servern gespeichert. Alternativ
-          können Sie Transaktionen jederzeit manuell eingeben, ohne dass Daten das Gerät verlassen.
+          Das Bild wird nach der Verarbeitung weder auf unseren Servern noch bei Anthropic dauerhaft
+          gespeichert. Anthropic hat sich vertraglich verpflichtet, übermittelte Inhalte nicht für
+          Modelltraining zu verwenden (DPA mit Anthropic Inc., Art. 28 DSGVO i.V.m. SCCs nach
+          Modul 2). Alternativ können Sie Transaktionen jederzeit manuell eingeben, ohne dass Daten
+          das Gerät verlassen.
         </p>
         <p className="text-muted leading-relaxed mt-3">
           <strong className="text-foreground">Hinweis USA-Transfer:</strong> Gilt entsprechend
@@ -149,11 +158,49 @@ export default function DatenschutzPage() {
       <section>
         <h2 className="text-lg font-bold text-foreground mb-3">9. Diese Website (schwabenspart.com)</h2>
         <p className="text-muted leading-relaxed">
-          Auf dieser Website werden keine personenbezogenen Daten aktiv erhoben. Es werden keine
-          Tracking-Cookies gesetzt. Affiliate-Links führen zu Drittanbieter-Seiten mit eigenen
-          Datenschutzrichtlinien. Der Hosting-Anbieter (Vercel) kann serverseitig technische
-          Zugriffslogs (IP-Adresse, Zeitstempel) speichern; Details:
+          Auf dieser Website werden keine Tracking-Cookies gesetzt. Affiliate-Links führen zu
+          Drittanbieter-Seiten mit eigenen Datenschutzrichtlinien. Der Hosting-Anbieter (Vercel
+          Inc., USA) speichert serverseitig technische Zugriffslogs (IP-Adresse, User-Agent,
+          Zeitstempel) für bis zu 30 Tage. Diese Daten werden vom Anbieter nicht ausgewertet und
+          nicht weiterverarbeitet. Die Auslieferung erfolgt aus der Region Frankfurt
+          (<code className="text-foreground">fra1</code>). Details:
           <a href="https://vercel.com/legal/privacy-policy" className="text-primary hover:underline ml-1" target="_blank" rel="noopener">vercel.com/legal/privacy-policy</a>.
+          Ein Datenverarbeitungs-Zusatz (DPA) mit Vercel besteht über die Vercel-Plattform-Nutzung.
+        </p>
+        <p className="text-muted leading-relaxed mt-3">
+          <strong className="text-foreground">Newsletter-Anmeldung:</strong> Wenn Sie sich für den
+          Newsletter eintragen, wird Ihre E-Mail-Adresse aktuell ausschließlich für den
+          Newsletter-Versand verwendet. Wir loggen serverseitig nur die Domain Ihrer E-Mail-Adresse
+          (z. B. „example.de") und einen Zeitstempel der Anmeldung — niemals die vollständige Adresse
+          im Klartext. Sobald ein Mailing-Provider mit Auftragsverarbeitungsvertrag (z. B. Resend,
+          Mailchimp) angebunden ist, ergänzen wir diese Datenschutzerklärung entsprechend.
+          Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung).
+        </p>
+        <p className="text-muted leading-relaxed mt-3">
+          <strong className="text-foreground">Reichweiten-Analyse mit Umami:</strong> Zur Messung
+          der Zugriffszahlen setzen wir Umami Cloud (Umami Software, Inc., USA) ein. Umami ist
+          cookielos und speichert keine IP-Adressen dauerhaft. IP-Adressen werden serverseitig
+          ausschließlich zur Erstellung eines pseudonymen Tagessessions-Hashes verwendet und nicht
+          gespeichert. Erfasst werden ausschließlich pseudonyme, aggregierte Metriken: besuchte
+          Seiten, Verweildauer, anonymisierte Herkunfts-Domain, verwendeter Browser- und Gerätetyp.
+          Das Tracking-Skript wird über unsere eigene Domain ausgeliefert
+          (<code className="text-foreground">/stats/script.js</code>), sodass keine direkte
+          Verbindung Ihres Browsers zu Umami-Servern entsteht. Eine interne Transfer-Risiko-Analyse
+          (TIA) für die Übermittlung an US-Server liegt vor und kommt zum Ergebnis, dass aufgrund
+          der Pseudonymisierung und des fehlenden Personenbezugs der pseudonymen Metriken kein
+          erhöhtes Drittland-Risiko besteht.
+        </p>
+        <p className="text-muted leading-relaxed mt-3 text-sm">
+          Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer
+          datensparsamen Reichweitenmessung). Eine Einwilligungspflicht nach § 25 TTDSG besteht
+          nicht, weil keine Informationen aus der Endeinrichtung des Nutzers ausgelesen oder
+          gespeichert werden (kein Cookie, kein Local Storage). Details &amp; Datenschutz von
+          Umami:{" "}
+          <a href="https://umami.is/privacy" className="text-primary hover:underline" target="_blank" rel="noopener">
+            umami.is/privacy
+          </a>
+          . Sie können das Tracking jederzeit über einen Ad-/Tracking-Blocker oder die
+          &bdquo;Do Not Track&ldquo;-Einstellung Ihres Browsers unterbinden.
         </p>
       </section>
 

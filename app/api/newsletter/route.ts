@@ -16,9 +16,12 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: "Bitte eine gültige E-Mail-Adresse eingeben." }, { status: 400 });
     }
 
-    // Logging — sichtbar in Vercel Dashboard unter Logs
-    // Bei >100 Subscribern auf Mailchimp/Resend umstellen
-    console.log(`[Newsletter] ${new Date().toISOString()} | Neue Anmeldung: ${normalizedEmail}`);
+    // DSGVO: E-Mail-Adresse niemals im Klartext loggen — Vercel speichert
+    // Logs bis zu 30 Tage in US-erreichbarer Infrastruktur. Nur Domain +
+    // Zeitstempel sind unbedenklich (kein Personenbezug ohne Local-Part).
+    // Sobald Mailchimp/Resend angebunden ist, faellt auch dieses Logging weg.
+    const emailDomain = normalizedEmail.split('@')[1] ?? 'unknown';
+    console.log(`[Newsletter] ${new Date().toISOString()} | Neue Anmeldung (Domain: ${emailDomain})`);
 
     return NextResponse.json(
       { message: "Erfolgreich angemeldet! Du erhältst bald die erste Schwaben-Woche." },
