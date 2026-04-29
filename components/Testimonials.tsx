@@ -138,6 +138,13 @@ export default function Testimonials() {
           </span>
         </div>
       </div>
+      <p className="mt-6 text-center text-xs text-muted max-w-2xl mx-auto leading-relaxed">
+        Beispielrechnungen auf Basis öffentlich verfügbarer Marktdaten und typischer
+        Haushaltsstrukturen. Tatsächliche Ergebnisse hängen von Marktentwicklung,
+        individueller Situation und Vertragsbedingungen ab. ETF-Beispiel basiert auf
+        gleichmäßiger hypothetischer Wertentwicklung — Renditen schwanken und können
+        negativ sein. Keine Anlageberatung im Sinne des WpHG/KWG.
+      </p>
     </section>
   );
 }

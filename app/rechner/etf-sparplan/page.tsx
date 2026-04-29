@@ -4,9 +4,9 @@ import SchwabenKommentar from "@/components/SchwabenKommentar";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "ETF Sparplan Rechner — Wann bist du Millionär?",
+  title: "ETF Sparplan Rechner — Zinseszins-Simulation",
   description:
-    "Berechne, wie dein Geld mit Zinseszins wächst. ETF-Sparplan simulieren mit Einmalzahlung, monatlicher Rate & historischer Rendite. Kostenlos.",
+    "Simuliere, wie dein Geld mit Zinseszins wachsen kann. ETF-Sparplan-Rechner mit Einmalzahlung, monatlicher Rate und historischer Rendite. Beispielrechnung, keine Anlageberatung.",
   alternates: {
     canonical: "/rechner/etf-sparplan",
   },
@@ -18,9 +18,9 @@ export const metadata: Metadata = {
     "Renditerechner",
   ],
   openGraph: {
-    title: "ETF Sparplan Rechner — Wann bist du Millionär?",
+    title: "ETF Sparplan Rechner — Zinseszins-Simulation",
     description:
-      "Berechne, wie dein Geld mit Zinseszins wächst. ETF-Sparplan simulieren mit Einmalzahlung, monatlicher Rate & historischer Rendite. Kostenlos.",
+      "Simuliere, wie dein Geld mit Zinseszins wachsen kann. ETF-Sparplan-Rechner mit Einmalzahlung, monatlicher Rate und historischer Rendite. Beispielrechnung, keine Anlageberatung.",
   },
 };
 
@@ -84,17 +84,15 @@ export default function EtfSparplanPage() {
         <SparplanRechner />
       </section>
 
-      {/* Schwaben comment */}
-      <section className="max-w-3xl mx-auto px-4 sm:px-6 pb-8">
-        <SchwabenKommentar text="A Schwabe weiss: Geld soll schaffe, net rumliega! Fang mit 50 Euro a — in 30 Johr lachsch drueber." />
-      </section>
-
-      {/* Disclaimer */}
-      <section className="max-w-3xl mx-auto px-4 sm:px-6 pb-12">
+      {/* Schwaben comment + Disclaimer (zusammenhängend) */}
+      <section className="max-w-3xl mx-auto px-4 sm:px-6 pb-12 space-y-3">
+        <SchwabenKommentar text="A Schwabe weiss: Geld soll schaffe, net rumliega — fang mit 50 Euro a." />
         <div className="bg-foreground/5 rounded-xl p-4 text-xs text-muted">
-          Die dargestellte Berechnung basiert auf einer gleichmäßigen, hypothetischen
-          Wertentwicklung. Tatsächliche Renditen schwanken und können negativ sein.
-          Dies ist keine Anlageberatung im Sinne des WpHG.
+          <strong>Beispielrechnung — keine Garantie.</strong> Die dargestellte Berechnung
+          basiert auf einer gleichmäßigen, hypothetischen Wertentwicklung. Tatsächliche
+          Renditen schwanken, können negativ sein und hängen von Marktentwicklung sowie
+          individueller Situation ab. Dies ist keine Anlageberatung im Sinne des WpHG/KWG
+          und keine Empfehlung zum Kauf bestimmter Finanzinstrumente.
         </div>
       </section>
     </>

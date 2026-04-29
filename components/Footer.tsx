@@ -71,6 +71,7 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li><Link href="/datenschutz" className="hover:text-accent transition-colors">{t("footer.datenschutz")}</Link></li>
               <li><Link href="/impressum" className="hover:text-accent transition-colors">{t("footer.impressum")}</Link></li>
+              <li><Link href="/agb" className="hover:text-accent transition-colors">AGB & Widerruf</Link></li>
             </ul>
             <p className="mt-4 text-sm">
               <a href="mailto:schwabenspart@googlemail.com" className="hover:text-accent transition-colors">
