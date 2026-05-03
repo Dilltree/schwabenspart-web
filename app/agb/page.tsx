@@ -41,19 +41,17 @@ export default function AgbPage() {
         <h2 className="text-lg font-bold text-foreground">§ 3 Vertragsschluss &amp; Preis (Lifetime-Lizenz)</h2>
         <p className="text-muted leading-relaxed">
           Die Pro-Funktionen werden als <strong>einmalige Zahlung</strong> angeboten. Der aktuelle
-          Preis beträgt <strong>8,99 € (inklusive gesetzlicher Umsatzsteuer)</strong>. Der Vertrag
+          Preis beträgt <strong>1,00 € (inklusive gesetzlicher Umsatzsteuer)</strong>. Der Vertrag
           kommt zustande, sobald der Nutzer den Kauf über den jeweiligen App-Store
           (Google Play / Apple App Store) bestätigt. Abrechnung und Zahlungsabwicklung erfolgen
           ausschließlich über den App-Store — der Anbieter erhält keine Zahlungsdaten.
         </p>
         <p className="text-muted leading-relaxed">
           Mit dem einmaligen Erwerb erhält der Nutzer eine unbefristete Lizenz zur Nutzung der zum
-          Kaufzeitpunkt freigeschalteten Pro-Funktionen. Der Anbieter behält sich vor, den
-          Funktionsumfang weiterzuentwickeln, solange der vertraglich geschuldete Kernnutzen
-          erhalten bleibt. Im Pro-Paket enthalten ist ein Kontingent von 10 Bon-Scans pro Monat
-          („dauerhaft inklusive"). Darüber hinausgehende Scans können — falls verfügbar — gegen
-          gesonderte Vergütung freigeschaltet werden; die jeweils aktuellen Konditionen werden in
-          der App vor dem Kauf transparent angezeigt.
+          Kaufzeitpunkt freigeschalteten Pro-Funktionen. Der Funktionsumfang umfasst lebenslangen
+          werbefreien Zugriff auf alle App-Funktionen (inkl. zukünftiger Updates), die vollständige
+          Schwaben-Gamification (alle 12 Stufen, Challenges, Streaks ohne Einschränkungen) und
+          Founders-Support für die Weiterentwicklung durch den Solo-Anbieter.
         </p>
       </section>
 
@@ -180,7 +178,7 @@ kontakt@dilltree.de
 
 Hiermit widerrufe(n) ich/wir (*) den von mir/uns (*) abgeschlossenen Vertrag über den Kauf der Lifetime-Lizenz „Schwabe Pro":
 
-Produkt: Schwabe Pro (Lifetime-Lizenz, einmalig 8,99 €)
+Produkt: Schwabe Pro (Lifetime-Lizenz, einmalig 1,00 €)
 Bestellt am: __________
 Name des/der Verbraucher(s): __________
 Anschrift des/der Verbraucher(s): __________

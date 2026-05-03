@@ -63,9 +63,14 @@ export default function UeberUnsPage() {
         <h2 className="text-xl font-bold text-foreground pt-4">Die Schwabe-App</h2>
         <p>
           Neben der Website gibt es auch <strong className="text-foreground">die Schwabe-App</strong> —
-          dein persönlicher Finanzassistent für Android. Tracke Einnahmen & Ausgaben, setze
-          Sparziele und bekomme personalisierte KI-Spartipps. Kostenlos und mit Verschlüsselung
-          deiner Daten.
+          dein offline Haushaltsbuch für Android. Tracke Einnahmen &amp; Ausgaben, setze Sparziele
+          und vergleiche dich anonym mit ähnlichen Haushalten (Destatis EVS 2023). Lokal
+          verschlüsselt, ohne Bank-Anbindung, ohne Cloud, <strong className="text-foreground">ohne KI</strong>.
+        </p>
+        <p className="mt-3">
+          <strong className="text-foreground">Pro für 1 €.</strong> Einmalig. Lebenslang. Andere
+          Spar-Apps nehmen 4,99 € pro Monat — ein Schwabe zahlt für seine Sparhilfe nicht mehr.
+          Werbefrei garantiert auf Lebenszeit. Kein Abo, keine Folgekosten, keine Falle.
         </p>
       </div>
     </div>
